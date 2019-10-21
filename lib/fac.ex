@@ -15,4 +15,12 @@ defmodule Fac do
   def hello do
     :world
   end
+
+  def map([head | rest], fun) do
+    [fun.(head) | map(rest, fun)]
+  end
+
+  def map([], _fun) do
+    []
+  end
 end
