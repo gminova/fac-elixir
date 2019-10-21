@@ -30,19 +30,7 @@ defmodule Fac do
     []
   end
 
-  def square_sum([head | rest]) do
-    [head * head | square_sum(rest)]
-  end
-
-  def square_sum([]) do
-    []
-  end
-
-  def square(num) do
-    num * num
-  end
-
-  def sum(num) do
-    num + num
+  def square_sum(nums) do
+    Enum.reduce(nums, 0, &((&1 * &1) + &2))
   end
 end
