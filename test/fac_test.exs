@@ -24,4 +24,12 @@ defmodule FacTest do
     # Works similar to deepEqual since it compares actual values but not references
     assert Fac.map([1, 2, 3], fn _multiply = x -> x * x end) == [1, 4, 9]
   end
+
+  test "Testing square_sum function" do
+    assert Fac.square_sum([1, 2]) == 5
+    # assert Fac.square_sum([0, 3, 4, 5]) == 50
+    # assert Fac.square_sum([]) == 0
+    # assert Fac.square_sum([-1, -2]) == 5
+    # assert Fac.square_sum([-1, 0, 1]) == 2
+  end
 end

@@ -29,4 +29,20 @@ defmodule Fac do
   def map([], _fun) do
     []
   end
+
+  def square_sum([head | rest]) do
+    [head * head | square_sum(rest)]
+  end
+
+  def square_sum([]) do
+    []
+  end
+
+  def square(num) do
+    num * num
+  end
+
+  def sum(num) do
+    num + num
+  end
 end
