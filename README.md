@@ -31,6 +31,6 @@ iex -S mix
 
 Run tests
 ```bash
-min test
+mix test
 ```
 
