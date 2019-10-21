@@ -25,11 +25,23 @@ defmodule FacTest do
     assert Fac.map([1, 2, 3], fn _multiply = x -> x * x end) == [1, 4, 9]
   end
 
-  test "Testing square_sum function" do
+  test "Testing square_sum function case1" do
     assert Fac.square_sum([1, 2]) == 5
-    # assert Fac.square_sum([0, 3, 4, 5]) == 50
-    # assert Fac.square_sum([]) == 0
-    # assert Fac.square_sum([-1, -2]) == 5
-    # assert Fac.square_sum([-1, 0, 1]) == 2
+  end
+
+  test "Testing square_sum function case2" do
+    assert Fac.square_sum([0, 3, 4, 5]) == 50
+  end
+
+  test "Testing square_sum function case3" do
+    assert Fac.square_sum([]) == 0
+  end
+
+  test "Testing square_sum function case4" do
+    assert Fac.square_sum([-1, -2]) == 5
+  end
+
+  test "Testing square_sum function case5" do
+    assert Fac.square_sum([-1, 0, 1]) == 2
   end
 end
