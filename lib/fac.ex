@@ -11,10 +11,10 @@ defmodule Fac do
       iex> Fac.hello()
       :world
 
-      iex> Fac.map([], fn add = x -> x * x end)
+      iex> Fac.map([], fn _multiply = x -> x * x end)
       []
 
-      iex> Fac.map([], fn _add = x -> x * x end) |> is_list()
+      iex> Fac.map([], fn _multiply = x -> x * x end) |> is_list()
       true
 
   """
