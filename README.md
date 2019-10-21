@@ -19,3 +19,18 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/fac](https://hexdocs.pm/fac).
 
+Create new Elixir project using mix(equivalent to npm or react-create-app)
+```bash
+mix new projectName
+```
+Compile and generate project
+
+```bash
+iex -S mix
+```
+
+Run tests
+```bash
+min test
+```
+
